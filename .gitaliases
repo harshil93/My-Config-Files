@@ -18,7 +18,12 @@ function Git-CurrentBranch(){
 	$(git rev-parse --abbrev-ref HEAD) | clip.exe
 }
 
+function Git-Log-Graph(){
+	git log --oneline --graph
+}
+
 New-Alias gil Git-Log
+New-Alias gilg Git-Log-Graph
 New-Alias gis Git-Status
 New-Alias gia Git-Add
 New-Alias glci LastCommitID
