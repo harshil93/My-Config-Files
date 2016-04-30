@@ -1,0 +1,25 @@
+function Git-Status(){
+	git status
+}
+
+function Git-Log(){
+	git log
+}
+
+function Git-Add($path){
+	git add $path
+}
+
+function LastCommitID(){
+	git log --format="%H" -n 1 | clip.exe
+}
+
+function Git-CurrentBranch(){
+	$(git rev-parse --abbrev-ref HEAD) | clip.exe
+}
+
+New-Alias gil Git-Log
+New-Alias gis Git-Status
+New-Alias gia Git-Add
+New-Alias glci LastCommitID
+New-Alias gcbr Git-CurrentBranch
