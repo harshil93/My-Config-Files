@@ -7,7 +7,11 @@ function Git-Log(){
 }
 
 function Git-Add($path){
-	git add $path
+	if($path -or $path -eq ''){
+		git add -u
+	}else{
+		git add $path
+	}
 }
 
 function LastCommitID(){
