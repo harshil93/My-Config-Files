@@ -24,7 +24,7 @@ function prompt {
 
     # Reset color, which can be messed up by Enable-GitColors
 
-    $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
+    # $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
 
 
 
