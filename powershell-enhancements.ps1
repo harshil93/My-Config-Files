@@ -1,6 +1,6 @@
 # Import module from previous step
 
-Import-Module -Name posh-git
+# POSH-Git is assumed to be loaded
 
 function Test-Administrator {
 
